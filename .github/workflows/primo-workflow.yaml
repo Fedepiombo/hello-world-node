@@ -1,0 +1,11 @@
+name : il mio primo Workflow
+
+on: [push]
+
+jobs:
+  saluto:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Stampa un messaggio nel terminale
+        run: echo "Ciao! Questo è il mio primo Workflow automatizzato su GH Actions"
