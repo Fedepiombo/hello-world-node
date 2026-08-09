@@ -8,4 +8,6 @@ test('sottrae 5 - 3 per dare 2', () => {
     expect(math.diff(5, 3)).toBe(2);
 });
 
-function sum(a, b) { return a - b; } // Errore intenzionale!
+test('test errato', () => {
+    expect(math.multiply(5, 3)).toBe(2);
+});
