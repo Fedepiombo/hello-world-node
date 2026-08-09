@@ -8,6 +8,3 @@ test('sottrae 5 - 3 per dare 2', () => {
     expect(math.diff(5, 3)).toBe(2);
 });
 
-test('test errato', () => {
-    expect(math.multiply(5, 3)).toBe(2);
-});
