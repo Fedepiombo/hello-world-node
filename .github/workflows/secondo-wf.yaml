@@ -1,0 +1,25 @@
+name: Pipeline CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Scarica il codice dal repository
+      uses: actions/checkout@v3
+
+    - name: Prepara l'ambiente Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18.x'
+
+    - name: Installa le librerie (Jest)
+      run: npm install
+
+    - name: Esegui i test in automatico!
+      run: npm test
